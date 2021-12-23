@@ -44,6 +44,9 @@ nav ul li {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
+	background-image: url("../images/weathered_snow_fences.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .subtitle {
