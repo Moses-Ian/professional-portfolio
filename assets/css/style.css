@@ -1,11 +1,27 @@
+:root {
+	--bg: #ededf6;				/*light blue*/
+	--primary-color: #526582;	/*soft blue*/
+	--secondary-color: #92cccd;	/*teal*/
+	--third-color: #31343d;		/*charcoal*/
+}
+
 * {
-	
+}
+
+body {
+	background-color: var(--bg);
 }
 
 /* HEADER */
 header {
 	display: flex;
 	justify-content: space-between;
+	background-color: var(--third-color);
+}
+
+.name {
+	color: var(--third-color);
+	background-color: var(--secondary-color);
 }
 
 nav ul {
@@ -18,7 +34,8 @@ nav ul {
 nav ul li {
 	padding: 5px;
 	margin: 2px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
 }
 
 /* HERO */
@@ -29,15 +46,22 @@ nav ul li {
 	align-items: flex-end;
 }
 
+.subtitle {
+	color: var(--third-color);
+	background-color: var(--secondary-color);
+}
+
 /* ARTICLE */
 article {
 	display: flex;
+	color: var(--primary-color);
+	background-color: var(--bg);
 }
 
 .title {
 	flex: 0 0 auto;
 	padding: 5px 10px;
-	border-right: 2px solid black;
+	border-right: 2px solid var(--primary-color);
 	width: 150px;
 }
 
@@ -62,11 +86,11 @@ h2 {
 .contact-info ul li {
 	padding: 5px;
 	margin: 2px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid var(--primary-color);
 }
 
 /* DEBUG */
-* {
-	border: 1px solid red;
-}
+/* * { */
+	/* border: 1px solid red; */
+/* } */
 	
