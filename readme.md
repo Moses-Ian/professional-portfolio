@@ -9,7 +9,12 @@ This is my professional portfolio. The intention is to show this to prospective 
 ## Website
 
 You can access the deployed website here:
+<br>
 https://moses-ian.github.io/professional-portfolio/
+
+### Screenshot
+
+![Screenshot](./assets/images/screenshot.png)
 
 ## Dead Links
 
