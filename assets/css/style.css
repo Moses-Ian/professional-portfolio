@@ -135,11 +135,26 @@ h2 {
 	align-items: flex-end;
 	background-size: cover;
 	opacity: 0.5;
+	position: relative;	/*needed for the link to work*/
 }
 
 .project:hover {
 	opacity: 1.0;
 }
+
+.project a { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+  
+  /* This one is crazy: */
+  /* The anchor is invisible, but is set to fill the entire .project div */
+  /* So that you can click anywhere in the div and the anchor is there to link you to the site */
+}  
 
 .project-title {
 	background-color: var(--secondary-color);
