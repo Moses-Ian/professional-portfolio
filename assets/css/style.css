@@ -106,9 +106,12 @@ h2 {
 /* PROJECTS */
 .work-projects {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-right: var(--right-margin-large);
+	max-height: 600px;
+	flex: 1 0 0;
 }
 
 .project {
@@ -116,8 +119,8 @@ h2 {
 	padding: 0;
 	margin: 8px;
 	height: 170px;
-	min-width: 460px;
-	flex: 1 0 0;
+	min-width: 300px;
+	flex: 1 0 170px;
 	display: flex;
 	align-items: flex-end;
 	background-size: cover;
@@ -144,12 +147,10 @@ h3 {
 }
 
 /* we'll do the first child stuff later */
-/* .project:first-child { */
-	/* width: 80%; */
-	/* height: auto; */
-	/* min-height: 170px; */
-	/* max-height: 460px; */
-/* } */
+.project:first-child {
+	height: 364px;
+	flex: 1 0 364px;
+}
 
 #surf-report {
 	background-image: url("../images/tiki_torch.jpg");
@@ -198,8 +199,19 @@ h3 {
 }
 
 /* media queries */
+@media screen and (max-width: 1200px) {
+}
+
 @media screen and (max-width: 980px) {
-	
+	.work-projects {
+		flex-direction: row;
+		max-height: none;
+	}
+
+	.project:first-child {
+		height: 250px;
+		flex: 1 0 250px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -306,8 +318,10 @@ h3 {
 	}
 }
 
+/* smallest reasonable size: 360px */
+
 /* DEBUG */
-/* * { */
-	/* border: 1px solid red; */
-/* } */
+* {
+	border: 1px solid red;
+}
 	
