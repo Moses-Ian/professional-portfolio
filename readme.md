@@ -18,9 +18,6 @@ https://moses-ian.github.io/professional-portfolio/
 
 ## Dead Links
 
-A number of the links are dead, as this is a work in progress. 
-* There is no resume. 
-* The contact me section doesn't have any working links. 
 * The only project that isn't a placeholder is Run Buddy.
 
 ## Credits
