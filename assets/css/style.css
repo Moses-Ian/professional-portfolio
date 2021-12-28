@@ -70,6 +70,10 @@ nav ul li a {
 	color: var(--secondary-color);
 }
 
+.icon {
+	display: none;
+}
+
 /* HERO */
 .hero {
 	height: 200px;
@@ -264,7 +268,7 @@ h3 {
 	}
 	
 	h1 {
-		font-size: 30px;
+		font-size: 31px;
 	}
 	
 	h2 {
@@ -307,8 +311,12 @@ h3 {
 
 @media screen and (max-width: 575px) {
 	header {
-		flex-direction: column;
-		height: 135px;
+		height: 45px;
+		background-color: var(--secondary-color);
+	}
+	
+	header nav {
+		display: none;
 	}
 	
 	header ul {
@@ -318,6 +326,29 @@ h3 {
 	
 	header ul li {
 		padding-bottom: 2px;
+	}
+	
+	.name {
+		height: 45px;
+	}
+	
+	.icon {
+		height: 45px;
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.hamburger {
+		width: 45px;
+		height: 45px;
+	}
+	
+	.icon:hover {
+		background-color: #ddd;
+		color: black;
 	}
 	
 	.hero {
