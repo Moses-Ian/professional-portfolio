@@ -28,6 +28,10 @@ header {
 	background-color: var(--third-color);
 	height: 85px;
 	align-items: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
 }
 
 .name {
@@ -236,6 +240,10 @@ h3 {
 }
 
 @media screen and (max-width: 980px) {
+	header {
+		position: relative;
+	}
+	
 	.work-projects {
 		flex-direction: row;
 		max-height: none;
