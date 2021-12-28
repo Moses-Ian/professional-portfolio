@@ -14,7 +14,7 @@
 			<div class="name">
 				<h1><a href="#">Ian Moses</a></h1>
 			</div>
-			<nav>
+			<nav id="links">
 				<ul>
 					<li><a href="#about-me">About Me</a></li>
 					<li><a href="#work">Work</a></li>
@@ -109,6 +109,21 @@
 				</ul>
 			</div>
 		</article>
+		
+		<!-- hamburger icon script -->
+		<script>
+		function myFunction() {
+			var x = document.getElementById("links");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		</script>
+
+		
+		
 	</body>
 </html>
 

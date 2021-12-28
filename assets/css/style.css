@@ -55,7 +55,8 @@ nav ul {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	margin: 0 var(--right-margin-large) 0 0;
+	padding-left: 0;
+	margin: 0 var(--right-margin-large) 0 10px;
 	align-items: flex-end;
 }
 
@@ -268,7 +269,7 @@ h3 {
 	}
 	
 	h1 {
-		font-size: 31px;
+		font-size: 30px;
 	}
 	
 	h2 {
@@ -309,19 +310,23 @@ h3 {
 	}
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 	header {
-		height: 45px;
-		background-color: var(--secondary-color);
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	
 	header nav {
 		display: none;
+		flex-direction: column;
 	}
 	
 	header ul {
 		padding: 0;
 		margin-right: 0;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	
 	header ul li {
@@ -330,6 +335,10 @@ h3 {
 	
 	.name {
 		height: 45px;
+	}
+	
+	.name h1 {
+		width: 90vw;
 	}
 	
 	.icon {
