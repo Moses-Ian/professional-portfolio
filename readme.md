@@ -14,7 +14,7 @@ https://moses-ian.github.io/professional-portfolio/
 
 ### Screenshot
 
-![Screenshot](./assets/images/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 ## Dead Links
 
