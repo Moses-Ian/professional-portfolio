@@ -191,12 +191,12 @@ h3 {
 	flex: 1 0 364px;
 }
 
-#copyright-timer {
-	background-image: url("../images/copyright-timer-preview.png");
+#deck-builder {
+	background-image: url("../images/deck-builder-preview.png");
 }
 
-#led-wall {
-	background-image: url("../images/christmas_lights.jpg");
+#copyright-timer {
+	background-image: url("../images/copyright-timer-preview.png");
 }
 
 #calculator {
